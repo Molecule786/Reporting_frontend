@@ -7,8 +7,7 @@ import 'download_helper_mobile.dart' if (dart.library.html) 'download_helper_web
 
 class ApiService {
   // Base URL for API calls - Local Backend (100% Working)
-  static String baseUrl = 'http://localhost:8001/api';
-  static String? _token;
+static String baseUrl = 'https://web-production-27f4.up.railway.app/api';  static String? _token;
 
   // Method to set a different base URL (e.g., for mobile testing)
   static void setBaseUrl(String newUrl) {
