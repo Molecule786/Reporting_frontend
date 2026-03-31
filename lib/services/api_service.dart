@@ -6,8 +6,9 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'download_helper_mobile.dart' if (dart.library.html) 'download_helper_web.dart' as dh;
 
 class ApiService {
-  // Base URL for API calls - Local Backend (100% Working)
-static String baseUrl = 'https://web-production-27f4.up.railway.app/api';  static String? _token;
+  // Base URL for API calls - Railway Production Backend
+  static String baseUrl = 'https://reporting-backend-production.up.railway.app/api';
+  static String? _token;
 
   // Method to set a different base URL (e.g., for mobile testing)
   static void setBaseUrl(String newUrl) {
